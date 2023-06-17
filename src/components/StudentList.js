@@ -13,6 +13,10 @@ const StudentList = () => {
 				<li>
 					<Student></Student>
 				</li>
+				<li>
+					<Student></Student>
+				</li>
+				
 			</ul>
 		</section>
 	);
