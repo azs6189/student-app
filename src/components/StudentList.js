@@ -8,15 +8,16 @@ const StudentList = () => {
 			<h2 className="student-list__heading">Student List</h2>
 			<ul className="student-list">
 				<li>
-					<Student></Student>
+					{/* Shorthand for displaying components 
+                    previously: <Student></Student> */}
+					<Student />
 				</li>
 				<li>
-					<Student></Student>
+					<Student />
 				</li>
 				<li>
-					<Student></Student>
+					<Student />
 				</li>
-				
 			</ul>
 		</section>
 	);
