@@ -3,19 +3,28 @@ import Student from './Student';
 import './StudentList.css';
 
 const StudentList = () => {
-	const studentComponents = [
-		<li>
-			{/* Shorthand for displaying components 
-                    previously: <Student></Student> */}
-			<Student name="Ada" email="ada@dev.org" />
-		</li>,
-		<li>
-			<Student name="Soo-ah" email="sooh@dev.org" />
-		</li>,
-		<li>
-			<Student name="Chrissy" email="chrissy@dev.org" />
-		</li>,
-	];
+    const studentData = [
+			{
+				name: 'Ada',
+				email: 'ada@dev.org',
+			},
+			{
+				name: 'Soo-ah',
+				email: 'sooah@dev.org',
+			},
+			{
+				name: 'Chrissy',
+				email: 'chrissy@dev.org',
+			},
+		];
+
+	const studentComponents = studentData.map(student => {
+        return (
+            <li><Student name={studentData.name} email={studentData.email}></Student></li>
+        )
+    })
+
+
 	return (
 		<section>
 			<h2 className="student-list__heading">Student List</h2>
