@@ -10,13 +10,13 @@ const StudentList = () => {
 				<li>
 					{/* Shorthand for displaying components 
                     previously: <Student></Student> */}
-					<Student />
+					<Student name="Ada" email="ada@dev.org" />
 				</li>
 				<li>
-					<Student />
+					<Student name="Soo-ah" email="sooh@dev.org" />
 				</li>
 				<li>
-					<Student />
+					<Student name="Chrissy" email="chrissy@dev.org" />
 				</li>
 			</ul>
 		</section>
