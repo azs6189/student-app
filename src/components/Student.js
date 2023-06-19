@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Student = (props) => {
 	return (
@@ -7,6 +8,12 @@ const Student = (props) => {
 			<li>Email: {props.emailData}</li>
 		</ul>
 	);
+};
+
+// Defines PropTypes validators
+Student.propTypes = {
+	name: PropTypes.string.isRequired,
+	email: PropTypes.string.isRequired,
 };
 
 export default Student;
