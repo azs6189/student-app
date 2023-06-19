@@ -4,15 +4,15 @@ import ClassInfo from './components/ClassInfo';
 function App() {
 	const studentData = [
 		{
-			namdData: 'Ada',
+			nameData: 'Ada',
 			emailData: 'ada@dev.org',
 		},
 		{
-			namdData: 'Soo-ah',
+			nameData: 'Soo-ah',
 			emailData: 'sooah@dev.org',
 		},
 		{
-			namdData: 'Chrissy',
+			nameData: 'Chrissy',
 			emailData: 'chrissy@dev.org',
 		},
 	];
