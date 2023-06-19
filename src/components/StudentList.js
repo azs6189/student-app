@@ -2,28 +2,14 @@ import React from 'react';
 import Student from './Student';
 import './StudentList.css';
 
-const StudentList = () => {
-    const studentData = [
-			{
-				name: 'Ada',
-				email: 'ada@dev.org',
-			},
-			{
-				name: 'Soo-ah',
-				email: 'sooah@dev.org',
-			},
-			{
-				name: 'Chrissy',
-				email: 'chrissy@dev.org',
-			},
-		];
-
-	const studentComponents = studentData.map(student => {
-        return (
-            <li><Student name={studentData.name} email={studentData.email}></Student></li>
-        )
-    })
-
+const StudentList = (props) => {
+	const studentComponents = props.students.map((student, index) => {
+		return (
+			<li key={index}>
+				<Student name={student.nameData} email={student.emailData}></Student>
+			</li>
+		);
+	});
 
 	return (
 		<section>
