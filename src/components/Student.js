@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const Student = (props) => {
+	const [isPresent, setIsPresent] = useState(false);
 	return (
 		<ul>
 			<li>Nickname: {props.nameData}</li>
