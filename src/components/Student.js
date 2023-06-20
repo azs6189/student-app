@@ -4,6 +4,9 @@ import { useState } from 'react';
 
 const Student = (props) => {
 	const [isPresent, setIsPresent] = useState(false);
+	const togglePresence = () => {
+		setIsPresent(!isPresent);
+	};
 	return (
 		<div>
 			<ul>
