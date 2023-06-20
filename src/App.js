@@ -1,5 +1,6 @@
 import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
+import Post from './components/Post';
 
 function App() {
 	const studentData = [
@@ -22,6 +23,7 @@ function App() {
 			<h1>Attendance</h1>
 			<ClassInfo memberCount={studentData.length}></ClassInfo>
 			<StudentList students={studentData}></StudentList>
+			<Post />
 		</main>
 	);
 }
