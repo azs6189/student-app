@@ -13,7 +13,9 @@ const Student = (props) => {
 				<li>Nickname: {props.nameData}</li>
 				<li>Email: {props.emailData}</li>
 			</ul>
-			<button>Toggle if {props.name} is present</button>
+			<button onClick={togglePresence}>
+				Toggle if {props.name} is present
+			</button>
 		</div>
 	);
 };
