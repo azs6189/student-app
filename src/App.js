@@ -23,6 +23,9 @@ function App() {
 			<h1>Attendance</h1>
 			<ClassInfo memberCount={studentData.length}></ClassInfo>
 			<StudentList students={studentData}></StudentList>
+
+			<Post />
+			<Post />
 			<Post />
 		</main>
 	);
