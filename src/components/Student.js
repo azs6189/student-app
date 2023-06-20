@@ -5,10 +5,13 @@ import { useState } from 'react';
 const Student = (props) => {
 	const [isPresent, setIsPresent] = useState(false);
 	return (
-		<ul>
-			<li>Nickname: {props.nameData}</li>
-			<li>Email: {props.emailData}</li>
-		</ul>
+		<div>
+			<ul>
+				<li>Nickname: {props.nameData}</li>
+				<li>Email: {props.emailData}</li>
+			</ul>
+			<button>Toggle if {props.name} is present</button>
+		</div>
 	);
 };
 
