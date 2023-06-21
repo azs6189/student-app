@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
 import Post from './components/Post';
@@ -44,10 +45,6 @@ function App() {
 				students={studentData}
 				onUpdateStudent={updateStudentData}
 			></StudentList>
-
-			<Post />
-			<Post />
-			<Post />
 		</main>
 	);
 }
