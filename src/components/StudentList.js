@@ -6,12 +6,13 @@ import PropTypes from 'prop-types';
 const StudentList = (props) => {
 	const studentComponents = props.students.map((student, index) => {
 		return (
-			<li key={index}>
+			<li key={student.id}>
 				<Student
 					id={student.id}
 					name={student.nameData}
 					email={student.emailData}
 					isPresent={student.isPresentData}
+					onUpdate={props.onUpdateStudent}
 				></Student>
 			</li>
 		);
