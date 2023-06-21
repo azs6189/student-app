@@ -35,6 +35,7 @@ StudentList.propTypes = {
 			isPresentData: PropTypes.bool,
 		})
 	),
+	onUpdateStudent: PropTypes.func.isRequired,
 };
 
 export default StudentList;
