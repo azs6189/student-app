@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
-import Post from './components/Post';
+// import Post from './components/Post';
 
 function App() {
 	const [studentData, setStudentData] = useState([
