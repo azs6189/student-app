@@ -7,7 +7,12 @@ const StudentList = (props) => {
 	const studentComponents = props.students.map((student, index) => {
 		return (
 			<li key={index}>
-				<Student name={student.nameData} email={student.emailData}></Student>
+				<Student
+					id={student.id}
+					name={student.nameData}
+					email={student.emailData}
+					isPresent={student.isPresentData}
+				></Student>
 			</li>
 		);
 	});
