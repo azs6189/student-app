@@ -24,8 +24,10 @@ const Student = (props) => {
 
 // Defines PropTypes validators
 Student.propTypes = {
+	id: PropTypes.number.isRequired,
 	name: PropTypes.string.isRequired,
 	email: PropTypes.string.isRequired,
+	isPresent: PropTypes.bool,
 };
 
 export default Student;
