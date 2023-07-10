@@ -36,6 +36,7 @@ StudentList.propTypes = {
 			isPresentData: PropTypes.bool,
 		})
 	),
+	// Updates state
 	onUpdateStudent: PropTypes.func.isRequired,
 };
 
