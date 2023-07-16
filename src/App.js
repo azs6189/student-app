@@ -4,6 +4,7 @@ import ClassInfo from './components/ClassInfo';
 // import Post from './components/Post';
 
 function App() {
+	// All student data
 	const [studentData, setStudentData] = useState([
 		{
 			id: 1,
